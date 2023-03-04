@@ -22,6 +22,7 @@ const authRoute = require('./routes/authRoute')
 const productRoute = require('./routes/productRoute')
 
 app.use(express.json())
+// allowed origins
 app.use(cors(corsOptions))
 
 //
