@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const express = require('express')
 const cors = require('cors')
 require('express-async-errors')
+const corsOptions = require('./config/corsOptions')
 
 //
 const app = express()
@@ -21,7 +22,7 @@ const authRoute = require('./routes/authRoute')
 const productRoute = require('./routes/productRoute')
 
 app.use(express.json())
-app.use(cors())
+app.use(cors(corsOptions))
 
 //
 app.use('/api/auth', authRoute)
