@@ -10,6 +10,9 @@ const app = express()
 // enable to .env
 dotenv.config()
 
+// adding index.html
+app.use(express.static('./public'))
+
 // DB File
 const connectDB = require('./db/dbConnect')
 
