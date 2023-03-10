@@ -26,7 +26,7 @@ app.use(express.json())
 // allowed origins
 app.use(cors(corsOptions))
 
-//
+// Routes
 app.use('/api/auth', authRoute)
 app.use('/api/products', productRoute)
 
