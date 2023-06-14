@@ -6,7 +6,7 @@ const cors = require('cors')
 require('express-async-errors')
 //const corsOptions = require('./config/corsOptions')
 const corsOptions = {
-  origin: ['https://sushil-krishil.on.fleek.co','https://zip4me.on.fleek.co'],
+  origin: ['https://sushil-krishil.on.fleek.co','https://zip4me.on.fleek.co','http://localhost:3000'],
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 }
